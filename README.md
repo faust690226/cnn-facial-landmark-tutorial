@@ -4,14 +4,14 @@ This document is the essentially setup for cnn-facial-landmark program written b
 This is a great implement about the facial-landmark detection and I show the way how I prepared the input data and the running process for the program. You can create the input data step by step by the following context, or download the input data already processed by myself in the following link:[resource link](https://drive.google.com/drive/folders/1nW_b4LdWN8S-v1Gw1j-JNIJhx6Ucun9N?usp=sharing)
 
 # Running cnn-facial-landmark
-##Environment
+## Environment
 System: Ubuntu 18.04
 
 Installation: python3.6.3, OpenCV(>= v3.4.2), FFmpeg, Jupyter Notebook 
 
 (Please refer to the [**Installation.md**](https://github.com/faust690226/cnn-facial-landmark-tutorial/blob/master/Installation.md).)
 
-##Download resource
+## Download resource
 The following link is the initial images and pts(contains 68 facial-landmark point).
 
 [**300-W**](https://ibug.doc.ic.ac.uk/resources/facial-point-annotations/) : In this link, I downloaded 300W,afw,helen,ibug and lfpw.
@@ -28,7 +28,7 @@ step 2: Executes command "**sh transfer\_vid\_to\_jpg.sh**" in terminal, and it 
 
 step3: Executes command "**sh transfer\_pic.sh**", and it transfers all pictures to the folder(**all-300vw-src**).
 
-##Verify resource
+## Verify resource
 
 You can download the source code by git, and replace the "**pts\_tools.py**" with which was modified by me:
 
@@ -52,14 +52,14 @@ You can verify the resource by"**pts\_tool.py**" and "**extract\_face\_from\_ibu
 
 ![](https://raw.githubusercontent.com/faust690226/cnn-facial-landmark-tutorial/master/pic/005.jpg)
 
-##Extract face from ibug
+## Extract face from ibug
 [**extract face from ibug**](https://github.com/yinguobing/image_utility/blob/master/extract_face_from_ibug.py):It can extract face region for all pictures, and you need to set the following two parameters in this file. 
 
 **DATA_DIR**:The input source file path
 
 **TARGET_DIR**:The target file path where you want to store.
 
-##Transfer to tfrecord format
+## Transfer to tfrecord format
 
 You can download the source code by git, and change to branch ibug:
 
@@ -83,7 +83,7 @@ Copy the three csv file to "**data folder**", and executes "**generate\_records.
 
 ![](https://raw.githubusercontent.com/faust690226/cnn-facial-landmark-tutorial/master/pic/007.jpg)
 
-##Execute Training, Validation, and Predict
+## Execute Training, Validation, and Predict
 You can download the source code by git, and change to branch master:
 
 $ *git clone https://github.com/yinguobing/cnn-facial-landmark.git*
