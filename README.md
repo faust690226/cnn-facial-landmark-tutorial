@@ -34,6 +34,14 @@ You can download the source code by git, and replace the "**pts\_tools.py**" wit
 
 $ *git clone https://github.com/yinguobing/image_utility.git*
 
+Before you execute "**pts\_tools.py**", it can avoid some build fail that you need to set the "**CASCADES_FILE**" path for "**face\_detector.py**". You can find your "**CASCADES_FILE**" path by the following command:
+
+$ *find / -name lbpcascade\_frontalface\_improved**
+
+In my case, CASCADES_FILE = "**/usr/local/share/OpenCV/lbpcascades/lbpcascade\_frontalface\_improved.xml**" in **face\_detector.py**.
+
+![](https://raw.githubusercontent.com/faust690226/cnn-facial-landmark-tutorial/master/pic/010.jpg)
+
 [**face_detector**](https://anonfile.com/W7rdG4d0b1/face_detector.rar):Copy "**face\_detector**" to "**image\_utility**", which can avoid the fail "
 **Can't open "face_detector/deploy.prototxt" in function 'ReadProtoFromTextFile'**".
 
