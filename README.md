@@ -7,7 +7,7 @@ This is a great implement about the facial-landmark detection and I show the way
 ## Environment
 System: Ubuntu 18.04
 
-Installation: python3.6.3, OpenCV(>= v3.4.2), FFmpeg, Jupyter Notebook 
+Installation: python3.6.6, OpenCV(>= v3.4.2), FFmpeg, Jupyter Notebook 
 
 (Please refer to the [**Installation.md**](https://github.com/faust690226/cnn-facial-landmark-tutorial/blob/master/Installation.md).)
 
@@ -51,7 +51,7 @@ In my case, CASCADES_FILE = "**/usr/local/share/OpenCV/lbpcascades/lbpcascade\_f
 
 **[Fail log]:**
 
-It will happen the following if you use opencv under anaconda 3.6.3.
+It will happen the following if you use opencv under anaconda 3.6.6.
 
     OpenCV(3.4.1) Error: Unspecified error (The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Carbon support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script) in cvShowImage, file /opt/conda/conda-bld/opencv-suite_1530789967746/work/modules/highgui/src/window.cpp, line 636
 

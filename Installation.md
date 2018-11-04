@@ -1,9 +1,9 @@
 
 
 ## Install python 
-Installed python 3.6.5 on anaconda, and there were some problem.
+Installed python 3.6.6 on anaconda, and there were some problem.
 
-**[Problem 1]:Anaconda install python 3.6.3 happen: ModuleNotFoundError: No module named 'tensorflow'..**
+**[Problem 1]:Anaconda install python 3.6.6 happen: ModuleNotFoundError: No module named 'tensorflow'..**
 
 Reproduce the problem by the following command:
 
