@@ -47,6 +47,35 @@ In my case, CASCADES_FILE = "**/usr/local/share/OpenCV/lbpcascades/lbpcascade\_f
 
 ![](https://raw.githubusercontent.com/faust690226/cnn-facial-landmark-tutorial/master/pic/006.jpg)
 
+
+
+**[Fail log]:**
+
+It will happen the following if you use opencv under anaconda 3.6.3.
+
+    OpenCV(3.4.1) Error: Unspecified error (The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Carbon support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script) in cvShowImage, file /opt/conda/conda-bld/opencv-suite_1530789967746/work/modules/highgui/src/window.cpp, line 636
+
+**[Fix]:**
+
+Install pip in anaconda and install opencv-python by pip.
+
+    (1) Enter your virtual environment of anaconda (with tensorflow).
+        $ conda activate tensorflow
+    (2) Install pip in anaconda
+        ＄ conda install pip
+    (3) pip install opencv-python 
+        https://anonfile.com/W7rdG4d0b1/face_detector.rar
+    (4) Install open-cv by pip which under the anaconda.(Install on VM)
+        ＄ /home/faust/.conda/envs/tensorflow/bin/pip install opencv-python
+    (5) verified if installed successfully on virtual environment.
+        ＄ conda list
+        Name                    Version                   Build  Channel
+        opencv-python             3.4.3.18                  <pip>
+    (6) Now you can run python code under anaconda.
+        Ex:
+        ＄ conda activate tensorflow (Enter your python virtual environment.)
+        ＄ python3 pts_tool.py
+
 [**count file**](https://github.com/yinguobing/image_utility/blob/master/count_files.py): Calculates the total file number.
 
 ![](https://raw.githubusercontent.com/faust690226/cnn-facial-landmark-tutorial/master/pic/003.jpg)
@@ -78,6 +107,12 @@ $ *git checkout ibug*
 [**generate csv**](https://github.com/yinguobing/tfrecord_utility/blob/ibug/generate_csv.py):Generate the "**data.csv**"
 
 [**split csv**](https://github.com/yinguobing/tfrecord_utility/blob/ibug/split_data.ipynb):
+
+Firstly, you should install pandas in anaconda.
+
+$ conda install -c anaconda pandas 
+
+$ conda install -c anaconda pillow (Fix "**ImportError: No module named PIL**" while build generate_records.sh.)
 
 $ *cd tfrecord_utility*
 

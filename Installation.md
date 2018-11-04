@@ -39,35 +39,21 @@ $ *tensorflow.\_\_version\_\_*
 [**Link2**](https://blog.csdn.net/qq_41185868/article/details/80276847)
 
 
-## Install OpenCV v3.4.3
+## Install OpenCV v3.4.2 on anaconda
+Search the "opencv" in [**Anaconda cloud server**](https://anaconda.org/search?q=opencv)
 
+In my case, the following is my target:
+anaconda / opencv 3.4.2
 
-[**opencv download**](https://github.com/opencv/opencv/releases) : The source code which I built was OpenCV 3.4.3.
+$ conda install opencv=3.4.2
 
-[**opencv install**](https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html):You can see this website for the opencv installation or refer the following step directly.
+check cv2 version:
 
-$ *tar -zxf opencv-3.4.3.tar.gz*
+$ python
 
-$ *cd ~/opencv-3.4.3*
+$ import cv2
 
-$ *mkdir build*
-
-$ *cd build*
-
-$ *cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..*
-
-$ *make -j7*
-
-$ *sudo make install*
-
-Check if the opencv version is v3.4.3:
-
-$ *python3*
-
-$ *import cv2*
-
-$ *cv2.\_\_version\_\_*
-
+$ cv2.\_\_version\_\_
 
 ## Install FFMPEG
 $ *sudo add-apt-repository ppa:djcj/hybrid*
