@@ -63,14 +63,13 @@ Install pip in anaconda and install opencv-python by pip.
         $ conda activate tensorflow
     (2) Install pip in anaconda
         ＄ conda install pip
-    (3) pip install opencv-python 
-    (4) Install open-cv by pip which under the anaconda.(Install on VM)
+    (3) Install open-cv by pip which under the anaconda.(Install on VM)
         ＄ /home/faust/.conda/envs/tensorflow/bin/pip install opencv-python
-    (5) verified if installed successfully on virtual environment.
+    (4) verified if installed successfully on virtual environment.
         ＄ conda list
         Name                    Version                   Build  Channel
         opencv-python             3.4.3.18                  <pip>
-    (6) Now you can run python code under anaconda.
+    (5) Now you can run python code under anaconda.
         Ex:
         ＄ conda activate tensorflow (Enter your python virtual environment.)
         ＄ python3 pts_tool.py
