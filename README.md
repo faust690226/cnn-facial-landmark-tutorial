@@ -64,7 +64,6 @@ Install pip in anaconda and install opencv-python by pip.
     (2) Install pip in anaconda
         ＄ conda install pip
     (3) pip install opencv-python 
-        https://anonfile.com/W7rdG4d0b1/face_detector.rar
     (4) Install open-cv by pip which under the anaconda.(Install on VM)
         ＄ /home/faust/.conda/envs/tensorflow/bin/pip install opencv-python
     (5) verified if installed successfully on virtual environment.
